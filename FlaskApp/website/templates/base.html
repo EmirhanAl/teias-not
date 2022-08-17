@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAChZgD/oWYA/6FmAP+hZgD/oGUA/55gAv+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6BlAP+eYAL/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+gZQD/nmAC/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oGUA/55gAv+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6BlAP+eYAL/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+gZQD/nmAC/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP+hZgD/oWYA/6FmAP/EnF3/xJxd/8ScXf/EnF3/w5xd/8KZXv/EnF3/xJxd/8ScXf/EnF3/xJxd/8ScXf/EnF3/xJxd/8ScXf/EnF3/4LR6/+C0ev/gtHr/4LR6/+C0ev/gtHr/4LR6/+C0ev/gtHr/4LR6/+C0ev/gtHr/4LR6/+C0ev/gtHr/4LR6/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/yHQA/8h0AP/IdAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title class="title-class">{% block title %}Home{% endblock %}</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        background-size: cover;
+        background-position: top center;
+        height: 100%;
+        bottom: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        background-color: #e0e0df;
+      }
+      #h3id {
+        position: static;
+        padding-left: 270px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      main {
+        margin-top: 50px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .navbar-nav {
+        padding-left: 83%;
+        font-style: inherit;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .navbars-logout:hover,
+      .navbars-logout:hover::before {
+        color: #fff;
+      }
+      .navbars-logout:active::before,
+      .navbars-logout a:active {
+        color: wheat;
+      }
+
+      .navbars-logout::before {
+        content: "\2022";
+        color: wheat;
+      }
+      .navbars a:hover,
+      .navbars:hover::before {
+        color: #fff;
+      }
+      .navbars-logout {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        left: 120px;
+        position: relative;
+      }
+      .navbars-logout:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.4);
+      }
+      #login:hover {
+        color: #fff;
+      }
+      #signUp:hover {
+        color: #fff;
+      }
+      #home:hover {
+        color: #fff;
+      }
+      #logout:hover {
+        color: #fff;
+      }
+
+      .main-header__logo {
+        color: rgb(0, 89, 255);
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 40px;
+        padding-left: 5%;
+      }
+      .main-header a {
+        text-decoration: none;
+      }
+
+      .navbars:active::before,
+      .navbars a:active {
+        color: wheat;
+      }
+
+      .navbars::before {
+        content: "\2022";
+        color: wheat;
+      }
+      .navbar {
+        top: 0px;
+        left: 0px;
+        background-size: cover;
+        background-position: top center;
+      }
+      header {
+        background: #291107;
+      }
+
+      .ea {
+        padding-left: 45%;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+      }
+      #login {
+        color: wheat;
+        padding-right: 25px;
+      }
+      #signUp {
+        color: wheat;
+        padding-right: 20px;
+      }
+      #home {
+        color: wheat;
+        padding-right: 20px;
+      }
+      #logout {
+        color: wheat;
+        padding-right: 50px;
+
+        position: relative;
+      }
+
+      .vr {
+        border-left: 3px solid rgb(0, 89, 255);
+        height: 60px;
+        left: 200px;
+        position: relative;
+      }
+      .lorem {
+        color: rgb(0, 89, 255);
+        height: 45px;
+        left: 277px;
+        position: relative;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .vr2 {
+        border-left: 55px solid rgb(0, 89, 255);
+        height: 24px;
+        left: 87px;
+        bottom: 36px;
+        position: absolute;
+      }
+      .vr3 {
+        border-left: 55px solid #fff;
+        height: 0.1px;
+        left: 87px;
+        top: 41.5px;
+        bottom: 2px;
+        position: absolute;
+      }
+      .vr4 {
+        border-left: 20px solid rgba(4, 0, 255, 0.654);
+        height: 20px;
+        left: 87px;
+        top: 44px;
+        position: absolute;
+      }
+      .vr5 {
+        border-left: 0.1px solid #fff;
+        height: 20px;
+        left: 108.5px;
+        top: 44px;
+        position: absolute;
+      }
+      .vr6 {
+        border-left: 31.5px solid rgba(4, 0, 255, 0.654);
+        height: 20px;
+        left: 110px;
+        top: 44px;
+        position: absolute;
+      }
+      .container {
+        padding-top: 150px;
+        color: black;
+      }
+      #button {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #ff9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 30px;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: color 0.6s;
+        z-index: 1000;
+      }
+      #button:hover {
+        background-color: black;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.25);
+      }
+      #button i {
+        transition: color 0.6s;
+      }
+      #button i:hover {
+        background-color: black;
+      }
+      #button:active {
+        background-color: black;
+      }
+
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+
+      .navbars {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+      }
+      .navbars:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.4);
+      }
+      .features__left {
+        background-size: 10px;
+
+        padding-top: 50%;
+        padding-left: 60%;
+        left: 20%;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+      .col-2 {
+        display: inline-block;
+        background-position: top center;
+        background-size: cover;
+
+        padding-left: 39%;
+        padding-top: 1%;
+      }
+      .col-2-0 {
+        padding-left: 0.5%;
+        padding-top: 1%;
+        position: absolute;
+      }
+      .col-2-1 {
+        position: absolute;
+        padding-left: 29.5%;
+        padding-top: 3%;
+      }
+      .col-2 {
+        position: absolute;
+        float: left;
+        margin-left: 15px;
+
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+      }
+      .col-2:hover {
+        transform: scale(0.82);
+        -webkit-transform: scale(0.82);
+      }
+      .col-2-0 {
+        position: relative;
+        float: left;
+        margin-left: 15px;
+
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+      }
+      .col-2-0:hover {
+        transform: scale(0.82);
+        -webkit-transform: scale(0.82);
+      }
+      .col-2-1 {
+        position: relative;
+        float: left;
+        margin-left: 15px;
+
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+      }
+      .col-2-1:hover {
+        transform: scale(0.82);
+        -webkit-transform: scale(0.82);
+      }
+
+      .features__right {
+        vertical-align: top;
+        position: absolute;
+      }
+
+      .baslık {
+        font-size: 40px;
+        left: 20%;
+        position: absolute;
+        color: #ff6600;
+        top: 750px;
+      }
+      .lorem2 {
+        left: 1%;
+        position: relative;
+        display: inline-block;
+        width: 1499px;
+
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .ulc {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: static;
+        top: 10%;
+        left: 600px;
+        padding-right: 615px;
+        padding-left: 600px;
+        border-style: solid;
+        border-width: 0.1px;
+        border-color: burlywood;
+      }
+      .ab {
+        display: block;
+        padding: 0;
+        border: 0;
+        position: static;
+        font-size: 12.5px;
+        padding-left: 0;
+      }
+      .lic ul {
+        display: none;
+      }
+      .lic:hover ul {
+        display: block;
+      }
+      .lic {
+        padding-left: 206px;
+      }
+
+      .licls {
+        float: left;
+      }
+
+      .aaa {
+        display: block;
+        size: 1px;
+        color: wheat;
+        padding: 10px 10px;
+        text-decoration: none;
+      }
+
+      .aaa:hover {
+        color: #fff;
+        background-color: chocolate;
+        text-decoration: none;
+      }
+      #çç {
+        font-size: 12px;
+      }
+
+      #ins i {
+        color: red;
+        font-size: 20px;
+      }
+      #tw i {
+        color: blue;
+        font-size: 20px;
+      }
+      #gm i {
+        color: #fff;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <link rel="shortcut icon" href="/iphone.ico" type="image/x-icon" />
+  <body>
+    <header class="main-header">
+      <nav class="icon-box">
+        <ul class="ulc">
+          <li class="licls">
+            <a
+              style="font-size: 14px"
+              class="aaa"
+              href="https://akademi.teias.gov.tr/erp/app/login.htm"
+              >Teiaş Akademi
+            </a>
+          </li>
+          <li style="font-size: 14px" class="licls">
+            <a class="aaa" href="#h3id">Hakkımızda</a>
+          </li>
+          <li class="lic">
+            <a style="font-size: 14px" class="aaa" href="#">İletişim</a>
+            <ul class="ab">
+              <a
+                id="ins"
+                class="aaa"
+                href="https://www.instagram.com/emrhnalbyrk/"
+                target="_blank"
+                >İnstagram
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </ul>
+            <ul class="ab">
+              <a
+                id="tw"
+                class="aaa"
+                href="https://twitter.com/Emrhnalbyrk"
+                target="_blank"
+                >Twitter
+                <i style="font-size: 20px" class="fa-brands fa-twitter"></i>
+              </a>
+            </ul>
+            <ul class="ab">
+              <a
+                class="aaa"
+                href="https://www.google.com/intl/tr/gmail/about/"
+                id="gm"
+                title="emrhnalbyrk2002@gmail.com"
+                target="_blank"
+                >E-mail
+                <i style="font-size: 20px" class="fa-solid fa-envelope"></i>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <p class="lorem">Türkiye <br />Elektrik <br />İletim A.Ş.</p>
+
+        <div class="vr"></div>
+        <div class="vr2"></div>
+        <div class="vr3"></div>
+        <div class="vr4"></div>
+        <div class="vr5"></div>
+        <div class="vr6"></div>
+
+        <a href="" class="main-header__logo">TEİAŞ</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            {% if user.is_authenticated %}
+
+            <li class="navbars-logout">
+              <a class="nav-item" id="logout" href="/logout">Çıkış</a>
+              {% else %}
+            </li>
+
+            <li class="navbars">
+              <a class="nav-item" id="login" href="/login">Giriş </a>
+            </li>
+            <br />
+
+            <li class="navbars">
+              <a class="nav-item" id="signUp" href="/sign-up">Kayıt Ol</a>
+              {% endif %}
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+      {{ message }}
+
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% else %}
+    <div class="alert alert-success alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+    <div class="container">{% block content %} {% endblock %}</div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br />
+    <h3 class="baslık" id="h3id">
+      Türkiye Elektrik İletim Anonim Şirketi (TEİAŞ) Nedir?
+    </h3>
+    <br />
+    <p class="lorem2">
+      TEİAŞ, 2003 yılında Elektrik Piyasası Düzenleme Kurumu’ ndan aldığı İletim
+      Lisansı çerçevesinde yeni piyasa yapısına uygun olarak merkez birimleri ve
+      yurt geneline yayılmış proje, tesis, kontrollük, işletme, bakım ve yük
+      dağıtım üniteleriyle faaliyetlerini sürdürmektedir.TEİAŞ’ ın iletim
+      şebekesi; 66.453 km uzunluğunda enerji iletim hattı, 729 trafo merkezi,
+      163.849 MVA trafo gücü ve komşu ülkelerle olan 12 enterkoneksiyon
+      hattından meydana gelmektedir. 2017 yıl sonu itibariyle 85.200 MW santral
+      kurulu gücü, 47.660 MW ani puantı, 295,5 milyar kWh yıllık elektrik
+      enerjisi üretimi ile Enterkonnekte Elektrik Sistemini kesintisiz, kaliteli
+      ve güvenilir bir şekilde işletilmektedir. Türkiye elektrik sistemi
+      18.09.2010 tarihinden beri Avrupa Elektrik İletim Sistemi İşleticileri Ağı
+      (ENTSO-E) ile senkron paralel olarak işletilmektedir.
+    </p>
+    <section id="features">
+      <div class="row">
+        <div class="col-2 features__left">
+          <img
+            style="width: 600px"
+            height="350px"
+            src="https://ia.tmgrup.com.tr/f31df6/943/605/0/0/1254/804?u=https://i.tmgrup.com.tr/inbsns/2021/07/06/teias-halka-arz-yoluyla-ozellesecek-1625578185594.jpg"
+            alt="resim1"
+          />
+        </div>
+        <div class="col-2-0">
+          <img
+            style="width: 600px"
+            height="350px"
+            src="https://webim.teias.gov.tr/file/f7e27d86-b402-4b61-ab65-5ed2ba63c89b?large=true"
+            alt="resim2"
+          />
+        </div>
+        <div class="col-2-1">
+          <img
+            style="width: 600px"
+            height="350px"
+            src="https://www.elektrikpanootomasyon.com/wp-content/uploads/Elektrik-Pano-Otomasyon-Teias-Haberlesme-Panolari.jpg"
+            alt="resim3"
+          />
+        </div>
+        <div style="clear: both"></div>
+        <div class="col-2 features__right"></div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+
+    <a href="#" id="button">
+      <i></i>
+    </a>
+  </body>
+  <footer class="ea">© EA COMPANY 2022</footer>
+</html>
